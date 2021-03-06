@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+    <nav id="nav-aux">
+        <h1>Structure HTML5</h1>
+        <div id="btn">
+            <div id="open"></div>
+            <div id="close"><a href="#"><i class="fas fa-times"></i></a></div>
+        </div>
+    </nav>
+    <div class="box-window" id="container">
+<!-- TODO: Contenido de la barra de navegacion -->
+        <nav id="navbar">
+           <header class="title">Structure HTML5</header>
+           <ul>
+               <li><a class="nav-link" id="box1" href="#Introduccion">Introduccion</a></li>
+               <li><a class="nav-link" id="box2" href="#Elementos_raiz">Elementos raiz</a></li>
+               <li><a class="nav-link" id="box3" href="#Metadatos">Metadatos</a></li>
+               <li><a class="nav-link" id="box4" href="#Scripting">Scripting</a></li>
+               <li><a class="nav-link" id="box5" href="#Secciones">Secciones</a></li>
+               <li><a class="nav-link" id="box6" href="#Comentarios">Comentarios</a></li>
+               <li><a href="#Reference" class="nav-link" id="box7">Reference</a></li>
+           </ul>
+        </nav>
+<!-- TODO: Contenido del documento -->
+        <main id="main-doc">
+            <section class="main-section" id="Introduccion">
+                <header>Introduccion</header>
+                <p class="first-p">Un documento HTML posee una estructura básica que contiene una variedad de etiquetas que definen la estructura de la pagina resultante, dichas etiquetas deben estar adecuadamente estructuradas para que la pagina funcione sin problemas.</p>
+                <div class="first-box">
+                    <code>
+                        &lt;!doctype html&gt;<br>
+                        &lt;html&gt;<br>
+                        &nbsp;&nbsp;&lt;head&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"/&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Titulo de la web&lt;/title&gt;<br>
+                        &nbsp;&nbsp;&lt;/head&gt;<br>
+                        &nbsp;&nbsp;&lt;body&gt;
+                    </code>
+                    <p style="color: #fff; font-size: .9em; margin-left: 2.5rem;">Contenido...</p>
+                    <code>
+                        &nbsp;&nbsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code>
+                </div>
+            </section>
+            <section class="main-section" id="Elementos_raiz">
+                <header>Elementos raiz</header>
+                <div class="second box">
+                    <code>
+                        &lt;!Doctype html&gt;
+                    </code>
+                </div>
+                <p class="first-p">Indica que el documento está bajo el estándar de HTML5.</p>
+                <div class="second box">
+                    <code>
+                        &lt;html&gt;
+                    </code>
+                </div>
+                <p class="first-p">Representa la raíz de un documento HTML. Es una buena práctica indicar el idioma mediante el atributo lang. </p>
+            </section>
+            <section class="main-section" id="Metadatos">
+                <header>Metadatos</header>
+                <div class="third box">
+                    <code>
+                        &lt;head&gt;
+                    </code>
+                </div>
+                <p class="first-p">En su interior se incluye la colección de metadatos sobre el documento y los enlaces a scripts y hojas de estilo.</p>
+                <div class="third box">
+                    <code>
+                        &lt;title&gt;
+                    </code>
+                </div>
+                <p class="first-p">Representa el título del documento. Se muestra en la barra superior del navegador o en las pestañas de página.</p>
+                <div class="third box">
+                    <code>
+                        &lt;link&gt;
+                    </code>
+                </div>
+                <p class="first-p">Utilizada para enlazar documentos externos de JavaScript y CSS. Se debe incluir dentro del <span class="span">&lt;head&gt;</span>.</p>
+                <div class="third box">
+                    <code>
+                        &lt;meta&gt;
+                    </code>
+                </div>
+                <p class="first-p">Define los metadatos que no pueden ser definidos usando otro elemento HTML. </p>
+                <div class="third box">
+                    <code>
+                        style&gt;
+                    </code>
+                </div>
+                <p class="first-p">Usada para escribir CSS interno.</p>
+            </section>
+            <section class="main-section" id="Scripting">
+                <header>Scripting</header>
+                <div class="fourth box">
+                    <code>
+                        &lt;script&gt;
+                    </code>
+                </div>
+                <p class="first-p">Define un script interno o un enlace hacia un script externo de JavaScript.</p>
+                <div class="fourth box">
+                    <code>
+                        &lt;noscript&gt;
+                    </code>
+                </div>
+                <p class="first-p">Representa un contenido alternativo a mostrar cuando el navegador no soporta scripting.</p>
+            </section>
+            <section class="main-section" id="Secciones">
+                <header>Secciones</header>
+                <div class="fifth box">
+                    <code>
+                        &lt;body&gt;
+                    </code>
+                </div>
+                <p class="first-p">Representa el contenido principal de un documento HTML. Sólo puede existir un elemento <span class="span">&lt;body&gt;</span> en el documento.</p>
+                <div class="fifth box">
+                    <code>
+                        &lt;section&gt;
+                    </code>
+                </div>
+                <p class="first-p">Define secciones de una web.</p>
+                <div class="fifth box">
+                    <code>
+                        &lt;nav&gt;
+                    </code>
+                </div>
+                <p class="first-p">Especifica una sección que contiene un menú de navegación.</p>
+                <div class="fifth box">
+                    <code>
+                        &lt;article&gt;
+                    </code>
+                </div>
+                <p class="first-p">Determina secciones de contenido.</p>
+                <div class="fifth box">
+                    <code>
+                        &lt;aside&gt;
+                    </code>
+                </div>
+                <p class="first-p">Define la barra lateral de una página web.</p>
+                <div class="fifth box">
+                    <code>
+                        &lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;
+                    </code>
+                </div>
+                <p class="first-p">Describe el tema de la sección. Disponemos de seis niveles: de h1 a h6, siendo <span class="span">&lt;h1&gt;</span> la cabecera de mayor importancia. Sólo puede existir una etiqueta <span class="span">&lt;h1&gt;</span> en el documento.</p>
+                <div class="fifth box">
+                    <code>
+                        &lt;header&gt;
+                    </code>
+                </div>
+                <p class="first-p">Determina la cabecera de una web o de un elemento.</p>
+                <div class="fifth box">
+                    <code>
+                        &lt;footer&gt;
+                    </code>
+                </div>
+                <p class="first-p">Define el pie de página. También se puede utilizar para definir el pie de otros elementos.</p>
+                <div class="fifth box">
+                    <code>
+                        &lt;address&gt;
+                    </code>
+                </div>
+                <p class="first-p">Especifica una sección que contiene información de contacto.</p>
+                <div class="fifth box">
+                    <code>
+                        &lt;main&gt;
+                    </code>
+                </div>
+                <p class="first-p">Determina el contenido principal del documento. Solo puede existir un elemento <span class="span">&lt;main&gt;</span> en el documento.</p>
+            </section>
+            <section class="main-section" id="Comentarios">
+                <header>Comentarios</header>
+                <p class="first-p">Los comentarios se escriben entre los caracteres <span class="span">"&lt;!– Comentario –&gt;"</span> y no se mostrarán en el navegador. Por ejemplo:</p>
+                <div class="first-box">
+                    <code>
+                        &lt;!-- Esto es un comentario dentro de un documento HTML --&gt;
+                    </code>
+                </div>
+            </section>
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <ul class="refer"><li>All the documentation in this page is taken from <a href="https://www.eniun.com/html5-estructura-basica-elementos-semanticos" target="_blank">Eniun</a> and <a href="https://desarrolladoresweb.org/html/estructura-basica-de-un-documento-html/" target="_blank">Desarrolladores web</a></li></ul>
+            </section><br><br>
+        </main>
+    </div>
+</body>
+</html>
